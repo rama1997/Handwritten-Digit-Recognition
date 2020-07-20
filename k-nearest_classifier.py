@@ -57,8 +57,7 @@ accuracies = []
 #currently using a smaller subset of 2000
 datasize = 100
 
-# external code from
-# gurus.pyimagesearch.com/lesson-sample-k-nearest-neighbor-classification
+# external code from gurus.pyimagesearch.com/lesson-sample-k-nearest-neighbor-classification
 # loop over various values of k for the k-Nearest Neighbor classifier
 print("From k = " + str(startK) + " to k = " + str(endK) + " with interval of " + str(kInt))
 print("Using datasize of " + str(datasize) + "/60000")
@@ -76,8 +75,6 @@ for k in range(startK, endK, kInt):
 i = np.argmax(accuracies)
 print("k=%d achieved highest accuracy of %.2f%% on validation data" % (kVals[i],accuracies[i] * 100))
 
-# external code from
-# gurus.pyimagesearch.com/lesson-sample-k-nearest-neighbor-classification
 # re-train our classifier using the best k value and predict the labels of the test data
 model = KNeighborsClassifier(n_neighbors=kVals[i])
 model.fit(trainData[:datasize], trainLabels[:datasize])
@@ -99,8 +96,7 @@ visualizer.fit(trainData[:datasize], trainLabels[:datasize])
 visualizer.score(X_test, y_test)
 g = visualizer.poof()
 
-#external code from
-#gist.github.com/amueller/4299381
+#external code from gist.github.com/amueller/4299381
 #plot pairs pca plots
 X_train, y_train = trainData[:datasize], trainLabels[:datasize]
 pca = PCA(n_components=2)
