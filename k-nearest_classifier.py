@@ -57,7 +57,6 @@ accuracies = []
 #currently using a smaller subset of 2000
 datasize = 100
 
-# external code from gurus.pyimagesearch.com/lesson-sample-k-nearest-neighbor-classification
 # loop over various values of k for the k-Nearest Neighbor classifier
 print("From k = " + str(startK) + " to k = " + str(endK) + " with interval of " + str(kInt))
 print("Using datasize of " + str(datasize) + "/60000")
@@ -96,7 +95,6 @@ visualizer.fit(trainData[:datasize], trainLabels[:datasize])
 visualizer.score(X_test, y_test)
 g = visualizer.poof()
 
-#external code from gist.github.com/amueller/4299381
 #plot pairs pca plots
 X_train, y_train = trainData[:datasize], trainLabels[:datasize]
 pca = PCA(n_components=2)
@@ -122,3 +120,5 @@ for i, j in product(range(10), repeat=2):
 
 plt.tight_layout()
 plt.savefig("mnist_pairs.png")
+
+#Sources can be found in Readme or in pdf
