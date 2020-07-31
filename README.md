@@ -14,5 +14,5 @@ The algorithm that I used to recognize handwritten digits from the MNIST dataset
 
 With an accuracy rating of 97%, the KNN classifier proves to be an effective algorithm to recognize handwritten digits. Looking at the PCAs plots for pairs of the MNIST dataset, there seems to be a clear distinction between any two digits which accounts for the high accuracy of the KNN classifier.
 
-Full report pdf can be found in the repo.
+Full report pdf with sources can be found in the repo.
 
